@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:text="@string/searchRecord"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150sp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="180sp"
+                android:layout_height="60sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5sp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/synchronize" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="180sp"
+                android:layout_height="60sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10sp"
+                android:layout_toEndOf="@+id/button"
+                android:layout_toRightOf="@+id/button"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/displayAll" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="220sp"
+                android:layout_height="60sp"
+                android:layout_alignLeft="@+id/button"
+                android:layout_alignStart="@+id/button"
+                android:layout_below="@+id/button"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="@string/searchContent"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="150sp"
+                android:layout_height="60sp"
+                android:layout_alignTop="@+id/editText2"
+                android:layout_toEndOf="@+id/editText2"
+                android:layout_toRightOf="@+id/editText2"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="@string/search" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

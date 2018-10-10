@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/IP_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="51dp"
+        android:text="@string/aimIp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Port_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/IP_tv"
+        android:layout_alignRight="@+id/IP_tv"
+        android:layout_below="@+id/IP_tv"
+        android:layout_marginTop="34dp"
+        android:text="@string/aimPort"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ip_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/IP_tv"
+        android:layout_alignBottom="@+id/IP_tv"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/IP_tv"
+        android:layout_toRightOf="@+id/IP_tv"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/ipValue" />
+
+    <EditText
+        android:id="@+id/Port_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Port_tv"
+        android:layout_alignBottom="@+id/Port_tv"
+        android:layout_alignLeft="@+id/ip_ET"
+        android:layout_alignStart="@+id/ip_ET"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/portValue" />
+
+
+    <Button
+        android:id="@+id/Connect_Bt"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Port_ET"
+        android:text="@string/connect" />
+
+    <Button
+        android:id="@+id/Send_Bt1"
+        android:layout_width="190sp"
+        android:layout_height="120sp"
+        android:layout_below="@+id/Connect_Bt"
+        android:layout_marginLeft="15sp"
+        android:layout_marginStart="15sp"
+        android:textSize="33sp"
+        android:text="@string/startMachine" />
+
+    <Button
+        android:id="@+id/Send_Bt2"
+        android:layout_width="190sp"
+        android:layout_height="120sp"
+        android:layout_below="@+id/Connect_Bt"
+        android:layout_marginRight="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_toEndOf="@+id/Send_Bt1"
+        android:layout_toRightOf="@+id/Send_Bt1"
+        android:textSize="33sp"
+        android:text="@string/resetMachine" />
+    <Button
+        android:id="@+id/Send_Bt3"
+        android:layout_width="190sp"
+        android:layout_height="120sp"
+        android:layout_below="@+id/Send_Bt1"
+        android:layout_marginLeft="15sp"
+        android:layout_marginStart="15sp"
+        android:textSize="33sp"
+        android:text="@string/stopMachine" />
+    <Button
+        android:id="@+id/Send_Bt4"
+        android:layout_width="190sp"
+        android:layout_height="120sp"
+        android:layout_below="@+id/Send_Bt2"
+        android:layout_marginRight="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_toEndOf="@+id/Send_Bt1"
+        android:layout_toRightOf="@+id/Send_Bt1"
+        android:textSize="33sp"
+        android:text="@string/continueMachine" />
+
+    <EditText
+        android:id="@+id/Receive_ET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Send_Bt3"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="@string/receiveContain"
+        android:inputType="textPersonName" />
+</RelativeLayout>

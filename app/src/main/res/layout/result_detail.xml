@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#f4f4f4"
+        tools:context="com.jpeng.demo.ResultDetail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/resultdetail"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/line_h"
+            android:showDividers="beginning|middle|end"
+            android:layout_marginTop="50dp"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/ID"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/SampleCode"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/TestItem"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/TestDateBegin"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/TestDateEnd"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/AuditDoctor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/AuditTime"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/ClientID"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/State"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/TestStep"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/FrameNo"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/TubeNo"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/ErrorInfo"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/Remark"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="H2O2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="LE"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="SNA"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="PIP"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="NAG"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="PH"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/Name"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/Age"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/PatientsType"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/ApplyDepartment"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/BedNum"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/AdmissionNum"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/ApplyDoctor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/TV"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/MOLDS"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/COCCUS"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/BACILLUS"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/WBC"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/RBC"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/SQEP"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/Cleanliness"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/DetectDate"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:divider="@drawable/line_h"
+                android:orientation="horizontal"
+                android:showDividers="beginning|middle|end"
+                tools:ignore="UselessParent">
+                <TextView
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/DetectDoctor"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="1dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>
