@@ -26,4 +26,5 @@ android {
 dependencies {
     compile project(':library')
     compile 'com.android.support:appcompat-v7:23.0.1'
+    compile files('libs/mysql-connector-5.1.25.jar')
 }

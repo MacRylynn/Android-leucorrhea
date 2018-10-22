@@ -23,7 +23,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * Created by ${LJ} on 16-11-14.
+ * Created by ${LJ} on 18-9-14.
  */
 public class Tab1Pager extends Fragment {
     boolean isConnect = true;//连接还是断开
@@ -41,10 +41,10 @@ public class Tab1Pager extends Fragment {
     private MyDatabaseHelperIpPort dbHelper;//存输入的ip和port
 
 
-    private String StartMachine = "0xF628F628 0 0x20 0xA5A5A5A5";
-    private String ResetMachine = "0xF628F628 1 0x21 0xA5A5A5A5";
-    private String StopMachine = "0xF628F628 2 0x22 0xA5A5A5A5";
-    private String ContinueMachine = "0xF628F628 3 0x23 0xA5A5A5A5";
+    private String StartMachine    = "0xF628F6280x010x010xA5A5A5A5";
+    private String ResetMachine    = "0xF628F6280x010x020xA5A5A5A5";
+    private String StopMachine     = "0xF628F6280x010x030xA5A5A5A5";
+    private String ContinueMachine = "0xF628F6280x010x040xA5A5A5A5";
 
 
     @Override
@@ -233,7 +233,7 @@ public class Tab1Pager extends Fragment {
         Cursor cursor = db.query("ip_port", null, null, null, null, null, null);
         if (cursor.moveToFirst()) {
             do {
-                String IP= cursor.getString(cursor.getColumnIndex("IP"));
+                String IP = cursor.getString(cursor.getColumnIndex("IP"));
                 String PORT = cursor.getString(cursor.getColumnIndex("PORT"));
                 Toast.makeText(getContext(), "IP：" + IP + "\n" + "PORT：" + PORT, Toast.LENGTH_SHORT).show();
             } while (cursor.moveToNext());

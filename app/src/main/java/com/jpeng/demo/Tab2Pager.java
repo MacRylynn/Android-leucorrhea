@@ -176,7 +176,9 @@ public class Tab2Pager extends Fragment {
         final Cursor cursor = db.query("afs", null, null, null, null, null, null);
         if (cursor.moveToFirst()) {
             do {
-                if (searchString.equals(cursor.getString(cursor.getColumnIndex("Name")))||searchString.equals(cursor.getString(cursor.getColumnIndex("ID")))) {
+                if (searchString.
+                        equals(cursor.getString(cursor.getColumnIndex("Name")))||searchString.
+                        equals(cursor.getString(cursor.getColumnIndex("ID")))) {
                     list.add(cursor.getString(cursor.getColumnIndex("ID")));
                 }
             } while (cursor.moveToNext());
